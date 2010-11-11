@@ -14,26 +14,21 @@ The {ActiveMerchant Wiki}[http://github.com/Shopify/active_merchant/wikis] conta
 * {Authorize.Net CIM}[http://www.authorize.net/] - US
 * {Authorize.Net}[http://www.authorize.net/] - US
 * {Beanstream.com}[http://www.beanstream.com/] - CA
-* {Beeline}[http://www.beeline.ru/] - RU
 * {Braintree}[http://www.braintreepaymentsolutions.com] - US
 * {CardStream}[http://www.cardstream.com/] - GB
 * {CyberSource}[http://www.cybersource.com] - US
 * {DataCash}[http://www.datacash.com/] - GB
 * {Efsnet}[http://www.concordefsnet.com/] - US
 * {Elavon MyVirtualMerchant}[http://www.elavon.com] - US, CA
-* {Euroset}[http://euroset.ru/] - RU
 * {eWAY}[http://www.eway.com.au/] - AU
 * {E-xact}[http://www.e-xact.com] - CA, US
 * {FirstPay}[http://www.first-pay.com] - US
 * {Garanti Sanal POS}[https://ccpos.garanti.com.tr/ccRaporlar/garanti/ccReports] - US, TR
 * {Inspire}[http://www.inspiregateway.com] - US
 * {InstaPay}[http://www.instapayllc.com] - US
-* {Interkassa}[http://www.interkassa.ru/] - RU
 * {Iridium}[http://www.iridiumcorp.co.uk/] - UK, ES
 * {JetPay}[http://www.jetpay.com] - US
 * {LinkPoint}[http://www.linkpoint.com/] - US
-* {Liqpay}[http://www.liqpay.com/] - UA
-* {Masterbank}[http://masterbank.ru/] - RU
 * {Merchant e-Solutions}[http://merchante-solutions.com/] - US
 * {MerchantWare}[http://merchantwarehouse.com/merchantware] - US
 * {Modern Payments}[http://www.modpay.com] - US
@@ -54,14 +49,11 @@ The {ActiveMerchant Wiki}[http://github.com/Shopify/active_merchant/wikis] conta
 * {PayPal Express Checkout}[https://www.paypal.com/cgi-bin/webscr?cmd=xpt/merchant/ExpressCheckoutIntro-outside] - US
 * {PayPal Website Payments Pro (US)}[https://www.paypal.com/cgi-bin/webscr?cmd=_wp-pro-overview-outside] - US
 * {Plug'n Pay}[http://www.plugnpay.com/] - US
-* {Premium}[http://m-commerce.ru/] - RU
 * {Protx}[http://www.protx.com] - GB
 * {Psigate}[http://www.psigate.com/] - CA
 * {PSL Payment Solutions}[http://www.paymentsolutionsltd.com/] - GB
-* {Qiwi}[http://qiwi.ru/] - RU
 * {Quickpay}[http://quickpay.dk/] - DK
 * {Realex}[http://www.realexpayments.com/] - IE, GB
-* {Robokassa}[http://www.robokassa.ru/] - RU
 * {Sage Payment Solutions}[http://www.sagepayments.com] - US, CA
 * {Sallie Mae}[http://www.salliemae.com] - US
 * {SecureNet}[http://www.securenet.com] - US
@@ -86,6 +78,16 @@ The {ActiveMerchant Wiki}[http://github.com/Shopify/active_merchant/wikis] conta
 * {Nochex}[http://www.nochex.com]
 * {PayPal Website Payments Standard}[https://www.paypal.com/cgi-bin/webscr?cmd=_wp-standard-overview-outside]
 * {SagePay Form}[http://www.sagepay.com/products_services/sage_pay_go/integration/form]
+
+* {Beeline}[http://www.beeline.ru/] - RU
+* {Euroset}[http://euroset.ru/] - RU
+* {Interkassa}[http://www.interkassa.ru/] - RU
+* {Liqpay}[http://www.liqpay.com/] - UA
+* {Masterbank}[http://masterbank.ru/] - RU
+* {Premium}[http://m-commerce.ru/] - RU
+* {Qiwi}[http://qiwi.ru/] - RU
+* {Robokassa}[http://www.robokassa.ru/] - RU
+
 
 == Download
 
