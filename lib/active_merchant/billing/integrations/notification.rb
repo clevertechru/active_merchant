@@ -1,3 +1,5 @@
+require 'ipaddr'
+
 module ActiveMerchant #:nodoc:
   module Billing #:nodoc:
     module Integrations #:nodoc:
@@ -10,8 +12,20 @@ module ActiveMerchant #:nodoc:
 
         def initialize(post, options = {})
           @options = options
+          if @options.has_key?(:production_ips)
+            self.production_ips = @options[:production_ips].map {|ip| IPAddr.new(ip)}
+          end
           empty!
-          parse(post)
+          if post.is_a?(Hash)
+            @params = post.clone
+          else
+            parse(post)
+          end
+        end
+
+        # subclasses should implement this method to make parameter-based integration detection work
+        def self.recognizes?(params)
+          false
         end
 
         def status
@@ -25,6 +39,10 @@ module ActiveMerchant #:nodoc:
 
         def gross_cents
           (gross.to_f * 100.0).round
+        end
+
+        def transaction_id
+          nil
         end
 
         # This combines the gross and currency and returns a proper Money object. 
@@ -43,9 +61,24 @@ module ActiveMerchant #:nodoc:
         # Check if the request comes from an official IP
         def valid_sender?(ip)
           return true if ActiveMerchant::Billing::Base.integration_mode == :test || production_ips.blank?
-          production_ips.include?(ip)
+          ip = IPAddr.new(ip) if ip.is_a?(String)
+          production_ips.each do |net|
+            return net.include?(ip)
+          end
+        end
+
+        def response_content_type
+          'text/html'
         end
         
+        def success_response(*args)
+          "OK"
+        end
+        
+        def error_response(*args)
+          "ERROR"
+        end
+
         private
 
         # Take the posted data and move the relevant data into a hash
