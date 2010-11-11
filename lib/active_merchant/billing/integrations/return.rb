@@ -6,7 +6,7 @@ module ActiveMerchant #:nodoc:
         attr_reader :notification
       
         def initialize(query_string, options = {})
-          @params  = parse(query_string)
+          @params = query_string.is_a?(Hash) ? query_string : parse(query_string)
           @options = options
         end
       
