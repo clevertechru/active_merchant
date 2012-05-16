@@ -85,7 +85,7 @@ class PayflowTest < Test::Unit::TestCase
     assert !gateway.test?
   end
   
-  def test_partner_class_accessor
+  def test_partner_class_attribute
     assert_equal 'PayPal', PayflowGateway.partner
     gateway = PayflowGateway.new(:login => 'test', :password => 'test')
     assert_equal 'PayPal', gateway.options[:partner]
