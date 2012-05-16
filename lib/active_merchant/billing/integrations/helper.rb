@@ -4,7 +4,7 @@ module ActiveMerchant #:nodoc:
       class Helper #:nodoc:
         attr_reader :fields
         class_attribute :service_url
-        class_inheritable_hash :mappings
+        class_attribute :mappings
         class_attribute :country_format
         self.country_format = :alpha2
         
@@ -14,12 +14,13 @@ module ActiveMerchant #:nodoc:
         self.application_id = 'ActiveMerchant'
 
         def initialize(order, account, options = {})
-          options.assert_valid_keys([:amount, :currency, :test, :credential2, :credential3, :credential4])
+          options.assert_valid_keys([:amount, :currency, :description, :test, :credential2, :credential3, :credential4])
           @fields = {}
           self.order       = order
           self.account     = account
           self.amount      = options[:amount]
           self.currency    = options[:currency]
+          self.description = options[:description]
           self.credential2 = options[:credential2]
           self.credential3 = options[:credential3]
           self.credential4 = options[:credential4]
