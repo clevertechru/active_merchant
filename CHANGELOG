@@ -1,4 +1,8 @@
 = ActiveMerchant CHANGELOG
+== Version 1.9.1 (May 16, 2011)
+
+* Add :description key into options of helper
+* Fix to support up rails 3.1 (class_inheritable_hash and class_inheritable_accessor to class_attribute)
 
 == Version 1.9.0 (October 14, 2010)
 
