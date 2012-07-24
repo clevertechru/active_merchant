@@ -160,5 +160,3 @@ Installation from RubyGems
 == Contributing
 
 Please see the {ActiveMerchant Guide to Contributing}[http://github.com/Shopify/active_merchant/wikis/contributing] for information on adding a new gateway to ActiveMerchant.
-
---
